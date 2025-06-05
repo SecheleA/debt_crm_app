@@ -1,15 +1,28 @@
-# Debt Collection CRM
+# Debt CRM App
 
-Full-stack CRM built with FastAPI (backend) and Streamlit (frontend).
+A modern debt collection CRM with FastAPI + Streamlit.
 
-## Run without Docker
+## 🚀 Features
+- Debtor management
+- Notes, PTPs, Invoices, Reminders
+- User roles (Collector, Supervisor, Admin)
+- Risk scoring, segmentation, legal flags
+- KPIs, call logs, QA reviews
 
+## 🛠 Tech Stack
+- FastAPI (backend)
+- Streamlit (frontend)
+- SQLModel + SQLite (database)
+- Docker (optional containerization)
+
+## 🔧 How to Run
+
+### Without Docker
 ```bash
-# Install dependencies
-pip install -r requirements.txt
+# Backend
+cd backend
+uvicorn main:app --reload
 
-# Start backend
-uvicorn backend.main:app --reload
-
-# In a second terminal
-streamlit run frontend/app.py
+# In another terminal
+cd frontend
+streamlit run app.py
