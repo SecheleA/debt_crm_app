@@ -1,1 +1,7 @@
-# Placeholder for backend code. Full FastAPI backend to be inserted here.
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"message": "Backend is working!"}
