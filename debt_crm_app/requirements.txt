@@ -1,6 +1,5 @@
 fastapi
 uvicorn
-sqlmodel
 streamlit
-pydantic
-python-multipart
+sqlmodel
+requests
